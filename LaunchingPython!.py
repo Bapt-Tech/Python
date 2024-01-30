@@ -1,5 +1,7 @@
 ###Importation des modules nécessaires
 from time import sleep
+import os
+from colorama import Fore, Style, Back
 
 
 ###Try
