@@ -1,18 +1,19 @@
-###Importation des modules nécessaires
+#Importation des modules nécessaires & Init
 from time import sleep
 import os
 from colorama import Fore, Style, Back
+colorama.init(autoreset=True)
 
 
-###Try
+#Try
 try:
 
-###DefCours
+#DefCours
     ErRoRR = ("54343431425434343425486346965445425465476768464341325209393954")
     def Chapitre1Bases():
         print("Bienvenue dans le chapitre 1, qui porte sur les bases, " + Name + " !")
 
-###CodeMenu
+#CodeMenu
     print("Salut !")
     sleep(1)
     print("Bienvenue danc ce cours de python ! ")
@@ -49,8 +50,8 @@ try:
 
     if ChapterChoice == 2:
         while True:
-            print("/!\ Il semblerait que la phase d'identification soit corrompue.")
-            print("/!\ Cherchez dans ce script le code contenu dans la variable ErRoRR")
+            print(Back.GREEN + Fore.RED + "/!\ Il semblerait que la phase d'identification soit corrompue.")
+            print(Back.GREEN + Fore.RED+ "/!\ Cherchez dans ce script le code contenu dans la variable ErRoRR")
             EnteredNIP = int(input("Entrez le PIN : "))
             if EnteredNIP == ErRoRR:
                 Chapitre2Modules()
@@ -74,7 +75,7 @@ try:
                 break
 
 
-###Except
+#Except
 except KeyboardInterrupt:
     try:
         exit("Erreur")
