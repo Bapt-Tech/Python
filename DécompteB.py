@@ -8,7 +8,14 @@ def ImportModules(): #Importataion des modules.
                 import time, datetime
                 print("Modules Trouvés !")
                 date_actuelle = datetime.date.today()
+                print(date_actuelle)
+                Day = []
+                Month = []
+                Year = []
         except ModuleNotFound:
                 print("Modules non trouvés.")
 ImportModules()
 
+def UserEntry():
+        EnteredDate = str(input("Entrez la date sous le format AAAA-MM-JJ"))
+        username, password, UserStatus = line.split(";")
