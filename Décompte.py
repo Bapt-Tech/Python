@@ -7,6 +7,7 @@ def ImportModules():#importation des modules
         try:
                 import time, datetime
                 print("super!")
+                date_actuelle = datetime.date.today()
         except ModuleNotFound :
                 print("modulenotfound")
 ImportModules()
